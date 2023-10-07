@@ -4,7 +4,7 @@ import { SearchBar } from "components/SearchBar/SearchBar";
 import { fetchMovies } from "components/api";
 import { useEffect, useState } from "react";
 import { useSearchParams } from 'react-router-dom';
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 import { Div, Wrapper } from "./Home.styled";
 
 export const Movies = () => {
