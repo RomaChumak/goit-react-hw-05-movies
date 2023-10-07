@@ -18,7 +18,12 @@ export async function fetchMovies(query) {
     return resp.data
 }
 
+export async function fetchCast(movieId) {
+    const resp = await axios.get(`/movie/${Number(movieId)}/credits?api_key=${API_KEY}&language=en-US`);
+    return resp.data
+}
+
 export async function fetchReviews(movieId) {
-    const resp = await axios.get(`/movie/?api_key=${API_KEY}&${movieId}/reviews?language=en-US`);
-    return resp.data;
+    const resp = await axios.get( `/movie/${Number(movieId)}/reviews?api_key=${API_KEY}&language=en-US`);
+    return resp.data
 }

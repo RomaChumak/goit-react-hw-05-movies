@@ -1,9 +1,10 @@
 import { useEffect, useState} from "react"
 import { fetchMovieDetails } from "../components/api";
 import  toast  from "react-hot-toast";
-import { Link, useParams } from "react-router-dom";
+import { Link, Outlet, useParams } from "react-router-dom";
 import { Loader } from "components/Loader/loader";
 import { MovieDetails } from "components/MovieDetails/MovieDetails";
+import { MovieAdditionalContainer,  AdditionalText, AdditionalItem, MovieContainer, Titel, AdditionalList} from "./MovieDetails.styled";
 export const Details = () => {
     const [loading, setLoading] = useState(false);
     const [err, setErr] = useState(false);
@@ -32,24 +33,25 @@ export const Details = () => {
     }, [movieId]);
 
     return (
-        <div>
+        <MovieContainer>
             <div>
             <Link>Go back</Link>
             {loading && <Loader />}
             {err && !loading}
             {details && <MovieDetails details={details} />}
         </div>
-            <div>
-                <h2>Additional information</h2>
-                <ul>
-                    <li>
-                        <Link>Cast</Link>
-                    </li>
-                      <li>
-                        <Link>Reviews</Link>
-                    </li>
-                </ul>
-            </div>
-        </div>
+            <MovieAdditionalContainer>
+                <Titel>Additional information</Titel>
+                <AdditionalList>
+                    <AdditionalItem>       
+                        <Link to="cast"><AdditionalText>Cast</AdditionalText></Link>
+                    </AdditionalItem>
+                      <AdditionalItem>
+                        <Link to="reviews"><AdditionalText>Reviews</AdditionalText></Link>
+                    </AdditionalItem>
+                </AdditionalList>
+            </MovieAdditionalContainer>
+            <Outlet/>
+        </MovieContainer>
     )
 }
