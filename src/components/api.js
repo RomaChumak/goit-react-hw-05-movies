@@ -17,3 +17,8 @@ export async function fetchMovies(query) {
     const resp = await axios.get( `/search/movie?api_key=${API_KEY}&query=${query}&include_adult=true&language=en-US`);
     return resp.data
 }
+
+export async function fetchReviews(movieId) {
+    const resp = await axios.get(`/movie/?api_key=${API_KEY}&${movieId}/reviews?language=en-US`);
+    return resp.data;
+}
