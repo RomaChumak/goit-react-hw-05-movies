@@ -2,7 +2,7 @@ import { Loader } from "components/Loader/loader";
 import { fetchReviews } from "components/api";
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
-import { ReviewList, ReviewItem, ReviewAuthor, ReviewAuthorSpan, ReviewComment, ReviewCommentSpan} from "./Rwviews.styled";
+import { ReviewList, ReviewItem, ReviewAuthor, ReviewAuthorSpan, ReviewComment, ReviewCommentSpan, NotReview} from "./Reviews.styled";
 
 export const Reviews = () => {
     const [loading, setLoading] = useState(false);
@@ -29,9 +29,10 @@ export const Reviews = () => {
     return (
         <>
             {loading && <Loader />}
-            {err && !loading}
+        {err && !loading}
+        {!review.length && <NotReview>There are no reviews</NotReview>}
             <ReviewList>{ review.map(i =>( 
-               <ReviewItem key={i.id}>
+              <ReviewItem key={i.id}>
                         <ReviewAuthor><ReviewAuthorSpan>Author:</ReviewAuthorSpan>{i.author}</ReviewAuthor>
                         <ReviewComment><ReviewCommentSpan>Comment:</ReviewCommentSpan>{i.content}</ReviewComment>
                 </ReviewItem>

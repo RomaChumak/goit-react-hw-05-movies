@@ -1,10 +1,12 @@
-
 import styled from "styled-components"
 
 export const MovieContainer = styled.div`
 display: flex;
 flex-direction: column;
 gap: 20px;
+padding-left: 20px;
+padding-right: 20px;
+margin-top: 20px;
 `
 
 export const MovieAdditionalContainer = styled.div`
@@ -38,7 +40,7 @@ justify-content: center;
 `
 
 
-export const AdditionalText = styled.p`
+export const MovieLinkText = styled.p`
 width: 160px;
     height: 44px;
     background-color: #02897A;
@@ -54,5 +56,5 @@ width: 160px;
     font-weight: 500;
     line-height: 1.2;
     cursor: pointer;
-    transition: background-color 250ms ease-in 0s
+    transition: background-color 250ms ease-in 0s;
 `

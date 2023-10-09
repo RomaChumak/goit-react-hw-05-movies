@@ -4,6 +4,7 @@ export const SearchForm = styled.form`
  display: flex;
   align-items: center;
   gap: 10px;
+  margin-bottom: 20px;
 `;
 
 export const SearchInput = styled.input`

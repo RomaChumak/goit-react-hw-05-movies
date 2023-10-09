@@ -44,3 +44,10 @@ line-height: 1.2;
 export const ReviewCommentSpan = styled.span`
 font-weight: 500;
 `
+
+export const NotReview = styled.h2`
+font-size: 25px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.2;
+`
