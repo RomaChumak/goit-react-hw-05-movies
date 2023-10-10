@@ -1,13 +1,27 @@
 {
   "files": {
     "main.css": "/goit-react-hw-05-movies/static/css/main.b5320759.css",
-    "main.js": "/goit-react-hw-05-movies/static/js/main.8bc9b8a6.js",
+    "main.js": "/goit-react-hw-05-movies/static/js/main.dac20c9c.js",
+    "static/js/6.2307a39d.chunk.js": "/goit-react-hw-05-movies/static/js/6.2307a39d.chunk.js",
+    "static/js/961.02c98ea9.chunk.js": "/goit-react-hw-05-movies/static/js/961.02c98ea9.chunk.js",
+    "static/js/385.5c9b3bd9.chunk.js": "/goit-react-hw-05-movies/static/js/385.5c9b3bd9.chunk.js",
+    "static/js/387.c1de836c.chunk.js": "/goit-react-hw-05-movies/static/js/387.c1de836c.chunk.js",
+    "static/js/779.ceb70998.chunk.js": "/goit-react-hw-05-movies/static/js/779.ceb70998.chunk.js",
+    "static/js/279.2250ee41.chunk.js": "/goit-react-hw-05-movies/static/js/279.2250ee41.chunk.js",
+    "static/js/14.bee953ee.chunk.js": "/goit-react-hw-05-movies/static/js/14.bee953ee.chunk.js",
     "index.html": "/goit-react-hw-05-movies/index.html",
     "main.b5320759.css.map": "/goit-react-hw-05-movies/static/css/main.b5320759.css.map",
-    "main.8bc9b8a6.js.map": "/goit-react-hw-05-movies/static/js/main.8bc9b8a6.js.map"
+    "main.dac20c9c.js.map": "/goit-react-hw-05-movies/static/js/main.dac20c9c.js.map",
+    "6.2307a39d.chunk.js.map": "/goit-react-hw-05-movies/static/js/6.2307a39d.chunk.js.map",
+    "961.02c98ea9.chunk.js.map": "/goit-react-hw-05-movies/static/js/961.02c98ea9.chunk.js.map",
+    "385.5c9b3bd9.chunk.js.map": "/goit-react-hw-05-movies/static/js/385.5c9b3bd9.chunk.js.map",
+    "387.c1de836c.chunk.js.map": "/goit-react-hw-05-movies/static/js/387.c1de836c.chunk.js.map",
+    "779.ceb70998.chunk.js.map": "/goit-react-hw-05-movies/static/js/779.ceb70998.chunk.js.map",
+    "279.2250ee41.chunk.js.map": "/goit-react-hw-05-movies/static/js/279.2250ee41.chunk.js.map",
+    "14.bee953ee.chunk.js.map": "/goit-react-hw-05-movies/static/js/14.bee953ee.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b5320759.css",
-    "static/js/main.8bc9b8a6.js"
+    "static/js/main.dac20c9c.js"
   ]
 }
