@@ -11,7 +11,7 @@ export const Details = () => {
     const [details, setDetails] = useState(null);
     const { movieId } = useParams()
     const location = useLocation()
-    const backLink = useRef(location.state?.from ?? '/movies');
+    const backLink = useRef(location.state?.from ?? '/');
 
     useEffect(() => {
         if (!movieId) {
