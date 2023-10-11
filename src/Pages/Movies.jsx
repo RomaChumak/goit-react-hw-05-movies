@@ -7,7 +7,7 @@ import {  useSearchParams } from 'react-router-dom';
 import toast from "react-hot-toast";
 import { Div, Wrapper } from "./Home.styled";
 
-export const Movies = () => {
+export default function Movies (){
     const [movies, setMovie] = useState([]);
     const [loading, setLoading] = useState(false);
     const [err, setErr] = useState(false);

@@ -5,7 +5,7 @@ import { Link, Outlet,  useParams, useLocation } from "react-router-dom";
 import { Loader } from "components/Loader/loader";
 import { MovieDetails } from "components/MovieDetails/MovieDetails";
 import { MovieAdditionalContainer,  MovieLinkText, AdditionalItem, MovieContainer, Titel, AdditionalList} from "./MovieDetails.styled";
-export const Details = () => {
+export default function Details (){
     const [loading, setLoading] = useState(false);
     const [err, setErr] = useState(false);
     const [details, setDetails] = useState(null);

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { MoviesList } from "components/MoviesList/MoviesList";
 import toast from "react-hot-toast";
 import { Wrapper, Title, Div } from "./Home.styled";
-export const HomePage = () => {
+export default function HomePage (){
 //   const fetch = fetchTopMovies();
 //     console.log(fetch)
     const [movies, setMovies] = useState([]);

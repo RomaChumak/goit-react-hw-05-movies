@@ -7,7 +7,7 @@ import { Loader } from "components/Loader/loader";
 
 const defaultImg = 'https://png.pngitem.com/pimgs/s/508-5087257_clip-art-hd-png-download.png';
 
-export function Cast() {
+export default function Cast() {
     const { movieId } = useParams();
     const [cast, setCast] = useState([]);
     const [loading, setLoading] = useState(false);

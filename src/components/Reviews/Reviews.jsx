@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
 import { ReviewList, ReviewItem, ReviewAuthor, ReviewAuthorSpan, ReviewComment, ReviewCommentSpan, NotReview} from "./Reviews.styled";
 
-export const Reviews = () => {
+export default function Reviews (){
     const [loading, setLoading] = useState(false);
     const [err, setErr] = useState(false);
     const [review, setReview] = useState([]);
